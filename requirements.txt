@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+jinja2
+pillow
+numpy
+scikit-learn
+tensorflow
+joblib
+python-multipart
+supabase
+python-dotenv
+python-jose
+
+
+
+
+

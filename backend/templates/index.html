@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diabetic Retinopathy Prediction</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Retinal Image Analysis For Diabetic Retinopathy using AI</h1>
+        <p>Upload a retinal image to predict Diabetic Retinopathy stage</p>
+    </header>
+
+    <div class="container">
+        <div class="upload-area" id="upload-area">
+            Click or Drag & Drop to Upload an Image
+            <input type="file" id="file-input" class="file-input" accept="image/*" />
+        </div>
+
+        <div id="progress-bar-container">
+            <label>Uploading...</label>
+            <progress id="file-upload-progress" max="100" value="0"></progress>
+        </div>
+
+        <div id="prediction-result" style="display:none;">
+            <p id="prediction-text"></p>
+            <img id="uploaded-image" src="" alt="Uploaded Image" />
+        </div>
+
+        <!-- Feedback section -->
+        <div id="feedback-section" style="display:none;">
+            <textarea id="comment" placeholder="Leave your comments here..."></textarea>
+            <div class="buttons">
+                <button id="accept-btn">Accept</button>
+                <button id="reject-btn">Reject</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Powered by Diabetic Retinopathy Prediction System
+    </footer>
+
+    <script src="/static/script.js" defer></script>
+</body>
+</html>

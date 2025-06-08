@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: dr-retinopathy-app
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
+      - key: SUPABASE_URL
+        value: https://yllzquehhwisqesbtlii.supabase.co
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlsbHpxdWVoaHdpc3Flc2J0bGlpIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0OTI3NjQ4MywiZXhwIjoyMDY0ODUyNDgzfQ.VOlJLzgU0lOsvcqaEk39Xpms28FF2RurifbtKmBNwQ0
